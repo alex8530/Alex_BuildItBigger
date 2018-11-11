@@ -16,7 +16,7 @@ public class EndPointAsyncTaskTest {
         com.udacity.gradle.builditbigger.MainActivityFragment fragment = new com.udacity.gradle.builditbigger.MainActivityFragment();
         fragment.testFlag = true;
         new EndpointAsyncTask().execute(fragment);
-        Thread.sleep(3000);
+        Thread.sleep(4000);
         assertTrue("there is error to get the Joke = " + fragment.loadedJoke, fragment.loadedJoke != null);
     }
 }

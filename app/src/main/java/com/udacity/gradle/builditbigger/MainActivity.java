@@ -105,14 +105,13 @@ class EndpointAsyncTask extends AsyncTask<MainActivityFragment, Void, String> {
         try {
             return myApiService.makeJoke().execute().getData();
         } catch (IOException e) {
-            return e.getMessage();
+            return null;
         }
 
     }
 
     @Override
     protected void onPostExecute(String result) {
-        Toast.makeText(context, ""+result, Toast.LENGTH_SHORT).show();
 
            mainActivityFragment.loadedJoke = result;
            mainActivityFragment.launchDisplayJokeActivity();

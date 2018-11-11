@@ -7,18 +7,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
+
 
 import com.example.androidjokelib.jokeActivity;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.api.client.extensions.android.http.AndroidHttp;
-import com.google.api.client.extensions.android.json.AndroidJsonFactory;
-import com.google.api.client.googleapis.services.AbstractGoogleClientRequest;
-import com.google.api.client.googleapis.services.GoogleClientRequestInitializer;
-import com.udacity.gradle.builditbigger.backend.myApi.MyApi;
-
-import java.io.IOException;
 
 
 /**
@@ -45,15 +36,8 @@ public class MainActivityFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-//        MyJoke myJoke= new MyJoke();
-//        Toast.makeText(this, myJoke.getJoke(), Toast.LENGTH_LONG).show();
-//        // for step 2
-//        Intent intent= new Intent(this,jokeActivity.class);
-//
-//       intent.putExtra(JOKE_KEY,myJoke.getJoke());
-//        startActivity(intent);
 
-
+//                new EndpointAsyncTask().execute(MainActivityFragment.this);
                 new EndpointAsyncTask().execute(MainActivityFragment.this);
 
             }
